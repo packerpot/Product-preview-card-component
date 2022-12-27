@@ -1,17 +1,16 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:wght@700;700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Fraunces:wght@900&display=swap');
-    
-
-
 
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    border: 1px solid red;
 }
 
 body {
     background: hsl(30, 38%, 92%);
+    counter-reset: my-sec-counter;
 
 }
 
@@ -19,20 +18,20 @@ body {
     display: flex;
     justify-content: center;
     flex-direction: row;
-    padding: 7%;
+    padding: 5%;
     flex-wrap: wrap;
 
 }
 
 .prod_img img {
-    width: 300px;
+    width: 18.75em;
     border-radius: 10px 0px 0px 10px;
-    margin-bottom: -5px;
 }
 
 .hero {
-    display: inline-flex;
+    display: flex;
     justify-content: center;
+    align-items: center;
     border-radius: 10px;
     background: white;
     flex-wrap: wrap;
@@ -42,10 +41,11 @@ body {
 .sec_b {
     display: flex;
     flex-direction: column;
-    width: 250px;
-    margin: 25px;
-
+     width: 270px;
+    margin: 20px;
 }
+
+
 
 .price {
     display: flex;
@@ -54,8 +54,8 @@ body {
     padding: 30px 0;
 }
 
-.sec_b h3 {
-color: hsl(228, 12%, 48%);
+.prod_name p {
+    color: hsl(228, 12%, 48%);
     text-transform: uppercase;
     font-family: Montserrat;
     padding: 5px 0;
@@ -72,7 +72,7 @@ color: hsl(228, 12%, 48%);
     padding: 15px 0;
 }
 
-.sec_b p {
+.prod_detail p {
     font-family: Montserrat;
     font-size: 15px;
     color: hsl(228, 12%, 48%);
@@ -81,27 +81,28 @@ color: hsl(228, 12%, 48%);
     opacity: 0.7;
 }
 
-.dis_price span {
+.dis_price p {
     color: hsl(158, 36%, 37%);
     font-size: 35px;
     font-weight: 900;
     padding-right: 20px;
 }
 
-.org_price span {
+.org_price  {
+    font-size: 20px;
     color: hsl(228, 12%, 48%);
-    text-decoration-line: line-through;
+    font-weight: bold;
     padding-right: 20px;
 }
-    
+
 .crt_btn button {
-    border-radius: 10px; 
+    border-radius: 10px;
     border: none;
     background-color: hsl(159, 60%, 25%);
     cursor: pointer;
-    color: white; 
+    color: white;
     font-family: montserrat;
-    padding: 13px 15px ; 
+    padding: 13px 15px;
     font-weight: bolder;
     min-width: 100%;
 }
